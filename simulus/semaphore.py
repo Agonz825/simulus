@@ -141,7 +141,7 @@ class Semaphore(Trappable):
             self.shuffled = False
                
             #log.debug('process unblocked on semaphore signal (val=%d)' % self.val)
-            p.acting_trappables.append(self)
+            #p.acting_trappables.append(self)
             p.activate()
         else:
             #log.debug('no unblock on semaphore signal (val=%d)' % self.val)
