@@ -98,7 +98,7 @@ class Trap(Trappable):
             #log.debug('%d process(es) unblocked on triggered trap' % len(self.blocked))
             assert len(self.blocked) > 0
             for p in self.blocked:
-                p.acting_trappables.append(self)
+                #p.acting_trappables.append(self)
                 p.activate()
             self.blocked.clear()
 
